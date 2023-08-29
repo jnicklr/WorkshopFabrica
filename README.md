@@ -1,1 +1,1 @@
-# WorkshopFabrica
+# Semana de Workshop (Treinamento) da Fábrica de SoftWare
