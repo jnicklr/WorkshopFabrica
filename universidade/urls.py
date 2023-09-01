@@ -6,4 +6,5 @@ urlpatterns = [
     path('aluno/', include('apps.aluno.urls')),
     path('matricula/', include('apps.matricula.urls')),
     path('professor/', include('apps.professor.urls')),
+    path('materia/', include('apps.materia.urls')),
 ]
