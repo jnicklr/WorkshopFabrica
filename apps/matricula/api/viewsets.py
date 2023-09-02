@@ -14,9 +14,9 @@ from rest_framework.mixins import ListModelMixin, CreateModelMixin, RetrieveMode
 # Foi optado pela utilização dos mixins para caso fosse necessário fazer alguma manipulação nos dados!
 # Também poderia ter sido utilizado o ModelViewSet que faria tudo automaticamente assim como eles! 
 
-class MatriculaViewSet(ListModelMixin, # LIST
+class MatriculaViewSet(ListModelMixin, # LIST (Pega múltiplos objetos)
                        CreateModelMixin, # POST
-                       RetrieveModelMixin, # GET
+                       RetrieveModelMixin, # GET (Pega um único objeto pelo id)
                        UpdateModelMixin, # PUT
                        DestroyModelMixin, # DELETE
                        GenericViewSet # Definir ViewSet

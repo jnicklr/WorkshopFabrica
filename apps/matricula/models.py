@@ -11,9 +11,9 @@ class Matricula(models.Model):
         ('c', 'Turma C'),
         ('d', 'Turma D'),
     )
-    data_matricula = models.DateField(auto_now_add=True)
-    valor = models.DecimalField(max_digits=5, decimal_places=2)
-    turma = models.CharField(max_length=1, choices=TURMA_CHOICES)
+    data_matricula = models.DateField(auto_now_add=True, verbose_name='Data da Matrícula', blank=False, null=False)
+    valor = models.DecimalField(max_digits=8, decimal_places=2, blank=False, null=False)
+    turma = models.CharField(max_length=1, choices=TURMA_CHOICES, blank=False, null=False)
     aluno = models.ForeignKey(Aluno, on_delete=models.CASCADE)
     curso = models.ForeignKey(Curso, on_delete=models.CASCADE)
 

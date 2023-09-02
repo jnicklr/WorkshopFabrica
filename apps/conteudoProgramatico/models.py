@@ -16,9 +16,9 @@ class ConteudoProgramatico(models.Model):
         ('P9', 'Turma P9'),
         ('P10', 'Turma P10'),
     )
-    area_do_conteudo = models.CharField(max_length=200) 
-    periodo = models.CharField(max_length=3, choices=TURMA_CHOICES)
-    materias = models.ManyToManyField(Materia)
+    area_do_conteudo = models.CharField(max_length=200, blank=False, null=False, verbose_name='Área do Conteúdo') 
+    periodo = models.CharField(max_length=3, choices=TURMA_CHOICES, verbose_name='Período', blank=False, null=False)
+    materias = models.ManyToManyField(Materia, blank=False)
 
     # A classe property serve para declarar uma determinada variável como uma
     # propriedade normal, ou seja, é possível desenvolver um método personalizado
