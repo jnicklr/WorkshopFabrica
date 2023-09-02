@@ -18,6 +18,9 @@ Projeto desenvolvido como desafio para o processo seletivo da Fábrica de Softwa
 * Abra o `git bash` ou `terminal` dentro dessa pasta
 * Copie a [URL](https://github.com/jnicklr/WorkshopFabrica.git) do repositório
 * Digite `git clone <URL copiada>` e pressione `enter`
+```bash
+git clone https://github.com/jnicklr/WorkshopFabrica.git
+```
 
 ### **3. Crie um ambiente virtual:**
 
