@@ -17,7 +17,7 @@ class Matricula(models.Model):
     turma = models.CharField(max_length=1, choices=TURMA_CHOICES)
     aluno = models.ForeignKey(Aluno, on_delete=models.CASCADE)
     curso = models.ForeignKey(Curso, on_delete=models.CASCADE)
-
+    
     @property
     def custo(self):
         return self.curso.mensalidade * (self.curso.tempo_conclusao * 12)
