@@ -30,7 +30,7 @@ The project was developed as a challenge for the Fábrica de Software UNIPE sele
 
 * Open your code editor's terminal and type `pip install -r requirements.txt`
 
-### **5. Configure your database and apply migrations:**
+### **5. Configure your database based on settings.py, connect it and apply migrations:**
 * Type `python manage.py migrate`
 
 ### **6. Run the program via the terminal:**
