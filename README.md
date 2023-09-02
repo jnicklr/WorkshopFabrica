@@ -16,7 +16,7 @@ Projeto desenvolvido como desafio para o processo seletivo da Fábrica de Softwa
 
 * Crie uma pasta no seu computador para esse programa
 * Abra o `git bash` ou `terminal` dentro dessa pasta
-* Copie a [URL](https://github.com/rafaballerini/AssistentePessoal.git) do repositório
+* Copie a [URL](https://github.com/jnicklr/WorkshopFabrica.git) do repositório
 * Digite `git clone <URL copiada>` e pressione `enter`
 
 ### **3. Crie um ambiente virtual:**
