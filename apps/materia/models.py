@@ -8,6 +8,7 @@ class Materia(models.Model):
     descricao = models.TextField(verbose_name='Descrição')
     assunto = models.TextField()
     professor = models.ManyToManyField(Professor)
+    carga_horaria = models.IntegerField(verbose_name='Carga Horária')
 
     def __str__(self):
-        return f"{self.nome}, {self.professor.nome}"
+        return f"{self.nome}"
