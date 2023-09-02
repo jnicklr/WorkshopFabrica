@@ -18,6 +18,9 @@ The project was developed as a challenge for the Fábrica de Software UNIPE sele
 * Open the `git bash` or `terminal` inside that folder
 * Copy the [repository URL](https://github.com/jnicklr/WorkshopFabrica.git)
 * Type `git clone <copied URL>` and press `enter`
+```bash
+git clone https://github.com/jnicklr/WorkshopFabrica.git
+```
 
 ### **3. Create a virtual environment:**
 
