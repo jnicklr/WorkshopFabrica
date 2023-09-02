@@ -1,4 +1,4 @@
-# Workshop - Fábrica de Software
+# <img src = "https://i.imgur.com/lpP9V2p.png" alt="bandeira americana" width="28" height="26"> Workshop - Fábrica de Software
 
 The project was developed as a challenge for the Fábrica de Software UNIPE selection process. The system was built using Django REST framework, and it consists of a process for enrolling in a university.
 
