@@ -1,4 +1,4 @@
-# WorkShop - Fábrica de Software
+# <img src = "https://i.imgur.com/saCuWe2.png" alt="bandeira americana" width="28" height="20"> Workshop - Fábrica de Software
 
 Projeto desenvolvido como desafio para o processo seletivo da Fábrica de Software da UNIPE, o sistema foi feito utilizando o framework do Django REST, a aplicação consiste de um processo para a realização de uma matrícula em uma universidade.
 
