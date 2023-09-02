@@ -1,7 +1,7 @@
 from django.db import models
 from apps.conteudoProgramatico.models import ConteudoProgramatico
 
-# Create your models here.
+# Criação do Models!
 
 class Curso(models.Model):
     nome = models.CharField(max_length=200)

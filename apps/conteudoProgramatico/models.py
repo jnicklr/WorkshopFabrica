@@ -1,7 +1,7 @@
 from django.db import models
 from apps.materia.models import Materia
 
-# Create your models here.
+# Criação do Models!
 
 class ConteudoProgramatico(models.Model):
     TURMA_CHOICES = (
@@ -13,9 +13,11 @@ class ConteudoProgramatico(models.Model):
         ('P6', 'Turma P6'),
         ('P7', 'Turma P7'),
         ('P8', 'Turma P8'),
+        ('P9', 'Turma P9'),
+        ('P10', 'Turma P10'),
     )
     area_do_conteudo = models.CharField(max_length=200) 
-    periodo = models.CharField(max_length=2, choices=TURMA_CHOICES)
+    periodo = models.CharField(max_length=3, choices=TURMA_CHOICES)
     materias = models.ManyToManyField(Materia)
     carga_horaria = property(lambda self: sum(materia.carga_horaria for materia in self.materias.all()))
 
