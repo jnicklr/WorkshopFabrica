@@ -29,4 +29,4 @@ class Matricula(models.Model):
         return self.curso.mensalidade * (self.curso.tempo_conclusao * 12)
 
     def __str__(self):
-        return f"{self.aluno.nome}, {self.data_matricula}"
+        return f"{self.aluno.nome}, {self.data_matricula}, {self.custo}"

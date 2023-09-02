@@ -30,4 +30,4 @@ class ConteudoProgramatico(models.Model):
     carga_horaria = property(lambda self: sum(materia.carga_horaria for materia in self.materias.all()))
 
     def __str__(self):
-        return f"Conteúdo Programático {self.area_do_conteudo}, {self.periodo}"
+        return f"Conteúdo Programático {self.area_do_conteudo}, {self.periodo}, {self.carga_horaria}"
