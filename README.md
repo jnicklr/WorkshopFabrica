@@ -38,7 +38,7 @@ Projeto desenvolvido como desafio para o processo seletivo da Fábrica de Softwa
 
 ## Sobre as APIs e como acessá-las:
 
-Você pode acessar a API colocando no final da URL (após iniciar o servidor) alguma das rotas que deixei listadas a baixo, como exemplo `http://127.0.0.1:8000/aluno/` que vai dar acesso a API de aluno. Através da URL é possível realizar todos os métodos HTTP como: GET, POST, PUT e DELETE. Para realizer os métodos PUT e DELETE é necessário indicar ao final da URL o indíce/id do dado a ser manipulado, `http://127.0.0.1:8000/aluno/1/`. Os aplicativos possuem uma paginação para defininir a quantidade de dados que irão aparecer na página, caso queira mudar isso basta colocar o limite desejável ao final da URL do jeito que irei mostrar `http://127.0.0.1:8000/aluno/?limite=x` no qual x indica quantos podem aparecer.
+Você pode acessar a API colocando no final da URL (após iniciar o servidor) alguma das rotas que deixei listadas a baixo, como exemplo `http://127.0.0.1:8000/aluno/` que vai dar acesso a API de aluno. Através da URL é possível realizar todos os métodos HTTP como: GET, POST, PUT e DELETE. Para realizer os métodos PUT e DELETE é necessário indicar ao final da URL o indíce/id do dado a ser manipulado, `http://127.0.0.1:8000/aluno/1/`. Os aplicativos possuem uma paginação para defininir a quantidade de dados que irão aparecer na página, caso queira mudar isso basta colocar o limite desejável ao final da URL do jeito que irei mostrar `http://127.0.0.1:8000/aluno/?limite=x` no qual x indica quantos podem aparecer. Além disso temos o `http://127.0.0.1:8000/aluno/?offset=x`, o número que colocarmos no x vai indicar a partir de qual elemento vai começar a exibir os dados.
 
 **Rotas APIs:**
 * `/professor/`
