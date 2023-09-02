@@ -1,9 +1,8 @@
 from django.db import models
 from apps.aluno.models import Aluno
 from apps.curso.models import Curso
-from datetime import timedelta
 
-# Create your models here.
+# Criação do Models!
 
 class Matricula(models.Model):
     TURMA_CHOICES = (
@@ -17,7 +16,14 @@ class Matricula(models.Model):
     turma = models.CharField(max_length=1, choices=TURMA_CHOICES)
     aluno = models.ForeignKey(Aluno, on_delete=models.CASCADE)
     curso = models.ForeignKey(Curso, on_delete=models.CASCADE)
+
+    # A classe property serve para declarar uma determinada variável como uma
+    # propriedade normal, ou seja, é possível desenvolver um método personalizado
+    # que se comporta como um campo do modelo
     
+    # O método a seguir calcula o valor total do curso que o usuário vai investir
+    # Exemplo: um curso de ciência da computação dura 4 anos e tem mensalidade 300
+    # a função vai calcular o custo baseado nesses valores, mensalidade (300) * total de meses (4 * 12)
     @property
     def custo(self):
         return self.curso.mensalidade * (self.curso.tempo_conclusao * 12)

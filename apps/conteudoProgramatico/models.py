@@ -19,6 +19,14 @@ class ConteudoProgramatico(models.Model):
     area_do_conteudo = models.CharField(max_length=200) 
     periodo = models.CharField(max_length=3, choices=TURMA_CHOICES)
     materias = models.ManyToManyField(Materia)
+
+    # A classe property serve para declarar uma determinada variável como uma
+    # propriedade normal, ou seja, é possível desenvolver um método personalizado
+    # que se comporta como um campo do modelo
+
+    # O método a seguir faz a soma de todas as cargas horárias das matérias
+    # que estão presentes na classe Materia que foi selecionada, e armazena o valor
+    # no atributo carga horária da classe ConteudoProgramatico
     carga_horaria = property(lambda self: sum(materia.carga_horaria for materia in self.materias.all()))
 
     def __str__(self):

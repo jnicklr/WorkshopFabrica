@@ -1,7 +1,7 @@
 from django.db import models
 from apps.professor.models import Professor
 
-# Create your models here.
+# Criação do Models!
 
 class Materia(models.Model):
     nome = models.CharField(max_length=200)
