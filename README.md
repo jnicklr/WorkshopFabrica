@@ -30,7 +30,7 @@ Projeto desenvolvido como desafio para o processo seletivo da Fábrica de Softwa
 
 * Abra o terminal do seu editor de código e digite `pip install -r requirements.txt`
 
-### **5. Configure seu banco de dados com base nos settings, conecte ele e depois faça as migrações:**
+### **5. Configure seu banco de dados com base nos settings.py, conecte ele e depois faça as migrações:**
 * Digite `python manage.py migrate`
 
 ### **6. Execute o programa pelo terminal:**
